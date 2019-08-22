@@ -1,0 +1,59 @@
+html, * {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p.lvl1 {
+    font-size: 56px;
+    background-color: darkblue;
+    border-left: 8px purple solid;
+    padding-left: 12px;
+}
+
+p.lvl1:nth-of-type(even) {
+    background-color: purple;
+    border-color: darkblue;
+}
+
+div.card + p.lvl1 {
+    margin-top: 12px;
+}
+
+p.lvl2 {
+    font-size: 36px;
+    padding-left: 12px;
+}
+
+div.container {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+div.card {
+    display: flex;
+    border: 1px greenyellow solid;
+    flex-direction: column;
+    margin: 8px;
+    padding: 4px;
+}
+
+div.card:nth-of-type(even) {
+    border-color: violet;
+}
+
+p.lvl3 {
+    font-size: 36px;
+    display: block;
+    margin: auto;
+    clear: both;
+}
+
+p.lvl3 + div {
+    display: block;
+    text-align: center;
+    padding-bottom: 8px;
+}
